@@ -13,8 +13,11 @@ class DrawCircle{
     circleColor = _circleColor;
   }
   
-  void draw(){
+  void setup(){
     smooth(8);
+  }
+  
+  void draw(){
     frameRate(500);
     stroke(circleColor);
     translate(width/2,height/2);
