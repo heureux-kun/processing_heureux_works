@@ -15,7 +15,10 @@ float[] circleSize = new float[NUM];
 
 void setup(){
   //screen size setting
-  size(800,600);
+  //size(800,600);
+  //フルスクリーンモード
+  fullScreen();
+  
   frameRate(60);
   blendMode(BLEND);
   background(0);

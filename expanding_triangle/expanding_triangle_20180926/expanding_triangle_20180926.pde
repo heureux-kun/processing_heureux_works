@@ -1,4 +1,5 @@
 //拡大する正三角形を生成
+
 int lineWidth;    //線の太さ
 color lineColor;  //線の色
 PVector centerPoint;  //三角形の中心点
@@ -41,21 +42,22 @@ void drawTriangle() {
 void draw() {
   drawTriangle();
   
-  println("radius："+radius);
-  println("rotate："+rotate);
+  println("radius："+ radius);
+  println("rotate："+ rotate);
 
   
 }
 
-//本当は、もし3点が画面をはみ出したらにしたい
+//本当は、もし三角が画面をはみ出したらにしたい
 void keyReleased(){
   if ( key == '1' ) {
     radius = random(0,50);
     rotate = 0;
     
-    rotateInitialValue += 10;
+    rotateInitialValue += 30;
     drawTriangle();
   }
+  //背面をリセットして描画
   else if ( key == '0' ) {
     background(#000000);
     drawTriangle();

@@ -11,7 +11,10 @@ int bands = 1024;
 float scale = 20.0;
 
 void setup(){
-  size(600,400);
+  //size(600,400);
+  
+  //フルスクリーンモード
+  fullScreen();
   
   //サウンド入力を初期化
   in = new AudioIn(this,0);
